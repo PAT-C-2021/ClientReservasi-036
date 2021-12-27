@@ -93,11 +93,11 @@ namespace ClientReservasi_036
 
         private void dtpemesanan_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBoxID.Text = Convert.ToString(dtpemesanan.Rows[e.RowIndex].Cells[1  ].Value);
+            textBoxID.Text = Convert.ToString(dtpemesanan.Rows[e.RowIndex].Cells[0].Value);
             textBoxNama.Text = Convert.ToString(dtpemesanan.Rows[e.RowIndex].Cells[3].Value);
             textBoxNoTlf.Text = Convert.ToString(dtpemesanan.Rows[e.RowIndex].Cells[4].Value);
-            textBoxJumlah.Text = Convert.ToString(dtpemesanan.Rows[e.RowIndex].Cells[2].Value);
-            textBoxIDLokasi.Text = Convert.ToString(dtpemesanan.Rows[e.RowIndex].Cells[0].Value);
+            textBoxJumlah.Text = Convert.ToString(dtpemesanan.Rows[e.RowIndex].Cells[1].Value);
+            textBoxIDLokasi.Text = Convert.ToString(dtpemesanan.Rows[e.RowIndex].Cells[2].Value);
 
             textBoxJumlah.Enabled = false;
             textBoxIDLokasi.Enabled = false;
